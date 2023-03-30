@@ -1,0 +1,46 @@
+﻿@using E_Market.Core.Application.ViewModels.Category
+@model SaveCategoryViewModel
+
+@{
+    ViewData["Title"] = "Save Category";
+    var CreateMode = Model.Id == 0 ? true : false;
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="card border-dark">
+                <div class="card-header text-white text-center bg-success">
+                    <h4>@(CreateMode ? $"Creating a new category" : $"Editing a Category {Model.Name}")</h4>
+                </div>
+                <div class="card-body">
+
+                    <form method="post" asp-controller="Category" asp-action="@(CreateMode ? "Create" : "Edit")">
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Name</label>
+                            <input asp-for="Name" class="form-control"/>
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <input asp-for="Description" class="form-control"/>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <input type="hidden" asp-for="Id"/>
+
+                        <button type="submit" class="btn btn-outline-success">@(CreateMode ? "Create" : "Edit")</button>
+                        <a asp-controller="Category" asp-action="Index" class="btn btn btn-outline-warning">Back</a>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

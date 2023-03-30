@@ -1,0 +1,48 @@
+﻿@using E_Market.Core.Application.ViewModels.Category
+@model List<CategoryViewModel>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<div class="container-fluid">
+
+    <div class="mb-3">
+        <a asp-controller="Category" asp-action="Create" class="btn btn-outline-primary">Create New</a>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+    @if(Model.Count == 0 || Model == null){
+
+        <h3 class="text-center fw-bold">There isn't category</h3>
+    }
+    else{
+
+        foreach(CategoryViewModel item in Model)
+        {
+
+        <div class="col">
+            <div class="card shadow-sm border-dark" style="background-color:aliceblue">
+              <div class="card-body">
+                  <h4 class="card-title">@item.Name</h4>
+                   <p class="card-text">@item.Description</p>
+                <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <a asp-controller="Category" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-success" type="button" >Edit</a>
+                   <a asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger" type="button" >Delete</a>
+                </div>
+               @* <small class="fw-bold">Quantity User: 3</small>*@
+                <small class="fw-bold">Quantity Ads: @item.AdsQuantity</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        }
+    }
+
+    </div>
+</div>
+

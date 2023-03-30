@@ -1,0 +1,49 @@
+﻿@using E_Market.Core.Application.ViewModels.Adverstisements
+@model List<AdsViewModel>
+
+@{
+    ViewData["Title"] = "My Adverstisements";
+}
+
+<div class="container-fluid">
+
+    <div class="mb-4">
+        <a asp-controller="Ads" asp-action="Create" class="btn btn-outline-primary">Create New Ads</a>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        @if (Model == null || Model.Count == 0)
+        {
+            <h3 class="text-center fw-bold">You dont Have any Ads upload.</h3>
+        }
+        else
+        {
+
+            foreach (AdsViewModel item in Model)
+            {
+
+                <div class="col">
+                    <div class="card zoom h-100">
+                        <img class="bd-placeholder-img card-img-top" width="100" height="320" src="@item.ImageUrl" />
+                        <div class="card-body">
+                            <div class="card-title fw-bold">
+                                @item.Name - @item.Category
+                            </div>
+                            <p class="card-text">@item.Description</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a asp-controller="Ads" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-success">Edit</a>
+                                    <a asp-controller="Ads" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Delete</a>
+                                </div>
+                                <small class="fw-bold">$ @item.Price</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        }
+    </div>
+</div>
+

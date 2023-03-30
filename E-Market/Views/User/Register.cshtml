@@ -1,0 +1,77 @@
+﻿@using E_Market.Core.Application.ViewModels.User
+@model SaveUserViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container-fluid">
+    <div class="col-6 offset-3">
+        <div class="card">
+            <div class="card-header" style="background-color:aliceblue"></div>
+            <div class="card-body">
+                <div class="card-title text-center fw-bold mb-3 mt-3 text-black">
+                <h2><i>Register new user</i></h2>
+                </div>
+
+                <form method="post" asp-controller="User" asp-action="Register">
+
+                    @Html.ValidationSummary(false, "", new {@class="text-danger"})
+
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label">Name</label>
+                        <input asp-for="Name" class="form-control" placeholder="Type your name"/>
+                       @* <span asp-validation-for="Name" class="text-danger"></span>*@
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="LastName" class="form-label">LastName</label>
+                        <input asp-for="LastName" class="form-control" placeholder="Type your LastName"/>
+                        @*<span asp-validation-for="LastName" class="text-danger"></span>*@
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label">Email</label>
+                        <input asp-for="Email" class="form-control" placeholder="Type your Email"/>
+                        @*<span asp-validation-for="Email" class="text-danger"></span>*@
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Phone" class="form-label">Phone</label>
+                        <input asp-for="Phone" class="form-control" placeholder="Type your Phone number"/>
+                        @*<span asp-validation-for="Phone" class="text-danger"></span>*@
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="UserName" class="form-label">Username</label>
+                        <input asp-for="UserName" class="form-control" placeholder="Type your Username"/>
+                        @*<span asp-validation-for="UserName" class="text-danger"></span>*@
+                        @*@if (ViewData["userExistent"] != null) {
+                            <span class="text-danger">@ViewData["userExistent"]</span>
+                        }*@
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label">Password</label>
+                        <input asp-for="Password" class="form-control" placeholder="Type your password"/>
+                        @*<span asp-validation-for="Password" class="text-danger"></span>*@
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ConfirmPassword" class="form-label"> Confirm Password</label>
+                        <input asp-for="ConfirmPassword" class="form-control" placeholder="Type your password again to confirm"/>
+                        @*<span asp-validation-for="ConfirmPassword" class="text-danger"></span>*@
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-primary">Save</button>
+                    <a asp-controller="User" asp-action="Index" class="btn btn-outline-warning">Back</a>
+
+                </form>
+            </div>
+                <div class="card-footer" style="background-color:aliceblue"></div>
+        </div>
+    </div>
+</div>
+
+
+

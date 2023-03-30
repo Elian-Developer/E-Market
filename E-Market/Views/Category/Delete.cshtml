@@ -1,0 +1,35 @@
+﻿@using E_Market.Core.Application.ViewModels.Category
+@model SaveCategoryViewModel
+
+@{
+    ViewData["Title"] = "Delete Category";
+}
+
+<div class="container-fluid">
+    <div class="col-6 offset-3">
+        <div class="card">
+            <div class="card-header bg-danger text-white">
+                <h4>¿Are you sure want delete the category @Model.Name?</h4>
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    <h5>If you remove this category, you will remove all ads associated with it.</h5>
+                </div>
+
+                <form method="post" asp-controller="Category" asp-action="DeletePost">
+
+                    <input type="hidden" asp-for="Id"/>
+
+                    <div class="mt-3">
+                        <button type="submit" class="btn btn-outline-danger">Delete</button>
+                        <a asp-controller="Category" asp-action="Index" class="btn btn-outline-warning">Back</a>
+                    </div>
+
+                </form>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
