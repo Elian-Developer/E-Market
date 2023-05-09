@@ -2,13 +2,12 @@
 
 ## *Tabla de contenido* 📄
 
-- [Descripcion general](https://github.com/Elian-Developer/Pokedex/tree/master#descripción-general)
-- [Demostraciones del proyecto](https://github.com/Elian-Developer/Pokedex/tree/master#demostraciones-del-proyecto)
-- [Construido con](https://github.com/Elian-Developer/Pokedex/tree/master#construido-con)
-- [Autor](https://github.com/Elian-Developer/Pokedex/tree/master#autor)
+- [Descripcion general](https://github.com/Elian-Developer/E-Market/tree/master#descripci%C3%B3n-general-)
+- [Demostraciones del proyecto]( https://github.com/Elian-Developer/E-Market/tree/master#demostraciones-del-proyecto-)
+- [Construido con](https://github.com/Elian-Developer/E-Market/tree/master#construido-con-%EF%B8%8F)
+- [Autor](https://github.com/Elian-Developer/E-Market/tree/master#autor-%EF%B8%8F)
 
 ## *Descripción General* 📋
-
 
 Este proyecto consiste en una ***E-Market App*** la cual nos permite publicar anuncios de objetos que necesitamos poner en venta, la misma 
 cuenta con autenticación de usuarios para que los usuarios puedan registrarse y del mismo tengan acceso a la pagina principal de la app donde 
