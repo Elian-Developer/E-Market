@@ -31,29 +31,25 @@ arquitectura ***Onion*** con repositorios y servicios genéricos.
 
 - ***Vista del login para iniciar sesion con tu usuario.***
 
-![image - 1](https://github.com/Elian-Developer/E-Market/assets/107364306/ff70d4e6-d4b7-4e7b-9cc8-d79897aff5aa)
-
-- ***Vista Para crearse un usuario en caso de no estar registrado.***
-
-![image - 2](https://github.com/Elian-Developer/E-Market/assets/107364306/da9b4ea4-9675-4eef-8aba-19334ba4becf)
+![image](https://github.com/Elian-Developer/E-Market/assets/107364306/aa272fef-60e2-47e7-a728-5ea0107ce98c)
 
 - ***Vista del Home del E-Market app***
 
-![image - 3](https://github.com/Elian-Developer/E-Market/assets/107364306/5ac8c851-5732-419e-a04b-447615b09556)
+![image](https://github.com/Elian-Developer/E-Market/assets/107364306/de8d23cc-e7e9-4b8b-ac0f-e0b3035d1885)
 
 - ***Vista de detalles de algun articulo seleccionado***
 
-![image - 4](https://github.com/Elian-Developer/E-Market/assets/107364306/e3081016-bdac-4cc4-86be-89cd11498ae0)
+![image](https://github.com/Elian-Developer/E-Market/assets/107364306/faa160e0-8180-46d4-ab53-b1fd39c14d4d)
 
 - ***Utilizando los Filtros del Home, tanto los filtros por nombres, como por categorias.***
 
-![image - 5](https://github.com/Elian-Developer/E-Market/assets/107364306/00414f43-e651-4a83-b51b-1462aa07a2d8)
+![image](https://github.com/Elian-Developer/E-Market/assets/107364306/3bed3362-3b2f-4258-8d94-984a0d052c42)
 
 - ***Mantenimiento de Mis anuncios, en esta sección podemos visualizar todos los anuncios publicados por el usuario activo
 hasta el momento, además de utilizar los botones para crear un nuevo anuncio, para editar o eliminar un anuncio en caso 
 de ser necesario.***
 
-![image - 6](https://github.com/Elian-Developer/E-Market/assets/107364306/bbf0b47c-d827-491a-9302-ed3c747cd0a1)
+![image](https://github.com/Elian-Developer/E-Market/assets/107364306/57930b4d-2405-4c5d-b49f-1ba952ff217e)
 
 ## *Construido con* 🛠️
 
